@@ -68,7 +68,7 @@ if __name__ == "__main__":
         HTTP_RESPONSE_TEXT, HTTP_RESPONSE_CODE = post_message(THIS_URL, MY_PAYLOAD)
         if HTTP_RESPONSE_CODE == 200:
             JSON_RESPONSE = json.loads(HTTP_RESPONSE_TEXT)
-            MY_LOG = '''IGNORE PAGED posted to VictorOps for entityId {0}
+            MY_LOG = '''IGNORE PAGED posted to VictorOps for entityId {0}\
             Result was {1} HTTP_RESPONSE: {2} '''.format(
                 JSON_RESPONSE['entity_id'],
                 JSON_RESPONSE['result'],
